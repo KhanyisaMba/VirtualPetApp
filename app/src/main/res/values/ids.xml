@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="GetStartedButton" type="id" />
+    <item name="welcomeTextView" type="id" />
+    <item name="startButton" type="id" />
+    <item name="playTextView" type="id" />
+</resources>

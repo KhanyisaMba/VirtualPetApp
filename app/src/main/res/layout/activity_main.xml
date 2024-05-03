@@ -1,0 +1,110 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    style="@style/imageView">
+
+    // to display the pets stats
+
+    // buttons to interact with the pet
+
+    // Button to go back to the welcome page
+
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dog_eating" />
+
+    <Button
+        android:id="@+id/feedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cleanlinessTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="442dp"
+        android:text="Feed"
+        android:textColor="#F1EDE7"
+        android:textColorLink="#F9A825"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cleanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cleanlinessTextView"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="442dp"
+        android:layout_toEndOf="@id/feedButton"
+        android:text="Clean"
+        android:textColor="#FBFBFB"
+        android:textColorHighlight="#F9A825"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/playtext"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="20dp"
+        android:text="Play"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cleanlinessTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="538dp"
+        android:layout_marginEnd="113dp"
+        android:text="Back to Home Page "
+        android:textColor="#F1EDE8"
+        android:textColorLink="#F9A825"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cleanlinessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hungerTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Cleanliness: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hungerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/healthTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Hunger: "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/healthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Health: "
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
